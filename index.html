@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Casa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header" class="fondo">
+            <h3>Cadastre su Casa</h3>
+        </div>
+        <div class="form-container">
+             <div class="form-header">
+                <p>Formulário</p>
+            </div>
+          <div class="form-body">
+             <h1 class="form-title">Venda facil su casa</h1>
+                <p>Describa las caracteristicas y marque las opciones que ella posee</p>
+            </div> 
+             <form>
+            <div class="box-input">
+            <label for="title">Titulo del anuncio <span class="requiared-field">*</span></label>
+            <input type="text" 
+                name="title"
+                id="title"
+                class="block"
+                placeholder="un titulo para su casa"
+                minlength="1"
+                maxlength="30"
+                required
+             >  
+              </div>
+              <div class="box-input">
+            <label for="price">Precio<span class="requiared-field">*</span></label>
+            <input type="number" 
+                name="price"
+                id="price"
+                class="block"
+                placeholder="digite el precio: "
+                minlength="1"
+                maxlength="30"
+                required
+             >  
+              </div>
+              <div class="box-input">
+            <label for="description">Descripcion<span class="requiared-field">*</span></label>
+            <textarea name="description" id="description" class="block" placeholder="Coloque aqui los detalles de la casa"></textarea>
+              </div>
+              <div class="box-input">
+            <label for="direction">Direccion<span class="requiared-field">*</span></label>
+            <input type="text" 
+                name="direction"
+                id="direction"
+                class="block"
+                placeholder="Digite la direccion de la casa: "
+                
+                required
+             >  
+              </div>
+               <div class="box-input">
+            <label for="color">Color de la casa<span class="requiared-field">*</span></label>
+            <input type="text" 
+                name="color"
+                id="color"
+                class="block"
+                placeholder="Digite el color actual de la casa: "
+                required
+             >  
+              </div>
+               <div class="box-input">
+            <label for="creation">fecha de construcion<span class="requiared-field">*</span></label>
+            <input type="date" 
+                name="creation"
+                id="creation"
+                class="block"
+                placeholder="Digite la fecha de construcion de la casa: "
+                required
+             >  
+              </div>
+               <div class="box-input">
+            <p>Tipo de construcion<span class="requiared-field">*</span></p>
+            <input type="radio" name="apartamento" id="apartment">
+            <label for="apartamento"> Apartamento</label>
+            <input type="radio" name="casa" id="home">
+            <label for="casa">Casa</label>
+              </div>
+                 <div class="optional-box">
+            <p>Opcionales<span class="requiared-field">*</span></p>
+            <ul class="optional-list">
+                <li>
+                    <input type="checkbox" name="optional[]" id="minimalista">
+                    <label for="minimalista">Minimalista</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="optional[]" id="tradicional">
+                    <label for="tradicional">Tradicional</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="optional[]" id="ciudad">
+                    <label for="ciudad">En la ciudad</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="optional[]" id="mar">
+                    <label for="mar">Cerca del mar</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="optional[]" id="garden">
+                    <label for="garden">Jardin</label>
+                </li>
+                    <li>
+                    <input type="checkbox" name="optional[]" id="pool">
+                    <label for="pool">Piscina</label>
+                </li>
+            </ul>
+              </div>
+               <div class="box-input">
+            <p>Fotos de la casa: <span class="requiared-field">*</span></p>
+                <input type="file" accept="image/png, image/jpg" id="images" name="images" required multiple>
+              </div>
+            <input type="submit" value="enviar" class="btn-submit">
+               
+            </form>
+        </div>  
+    </div>
+</body>
+</html>
