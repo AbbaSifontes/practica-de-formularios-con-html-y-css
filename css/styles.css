@@ -117,14 +117,46 @@ color: #ed0000;
 /* responsividade */
 
 /*celular 320px*/
-@media (max-width: 320px) {
-    .header{
+@media screen and (max-width: 600px) {
+     .header{
         width: 120%;
     }
     .form-container{
         width: 120%;
     }
+    input[type="text"], 
+    input[type="number"], 
+    input[type="date"], 
+    input[type="file"],
+     textarea {
+    width: 200px;
 }
+    .form-title {
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+.form-body p {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.form-header p {
+    color: #ff9ae7;
+    border-bottom: 2px solid #ff9ae7;
+    width: 100px;
+    text-align: center;
+    margin: 0 180px auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+.header h3 {
+    color: #fff;
+    margin-top: 0;
+    margin-left: -99px;
+}
+} 
+   
+
 /*celular 375px*/
 @media (max-width: 395px){}
 /* celular 576px */
