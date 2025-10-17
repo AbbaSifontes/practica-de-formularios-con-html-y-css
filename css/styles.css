@@ -114,22 +114,24 @@ color: #ed0000;
         color: #ff9ae7;
 }
 
-/*responsive laptop 1024px*/
-@media (max-width: 1024px){
+ /* móviles */ 
+@media (max-width: 600px) { 
+.header h3{
+    margin-left: 45px;
+}
     .form-container {
-    background-color: #fcfcfc;
-    width: 60%;
-    margin: 0 160px auto;
-    position: relative;
-    top: -62px;
-    padding: 20px;
+        background-color: #fcfcfc;
+        width: 90%;
+        margin: 0 13px auto;
+        position: relative;
+        top: -62px;
+        padding: 20px;
+    }
 }
-.header h3 {
-    color: #fff;
-    margin-top: 0;
-    margin-left: -45px;
-}
-.form-title {
+/* tablets */ 
+@media (min-width: 601px) and (max-width: 1024px) {
+ 
+    .form-title {
     margin-bottom: 15px;
     text-align: center;
 }
@@ -137,58 +139,9 @@ color: #ed0000;
     margin-bottom: 20px;
     text-align: center;
 }
+}
+ 
+/* escritorio */
+@media (min-width: 1025px) { 
 
-}
-
-/*responsive tablet 768px*/
-@media (max-width:768px){
-    .header h3 {
-    color: #fff;
-    margin-top: 0;
-    margin-left: 66px;
-}
-
-}
-/*responsive celular 425px*/
- @media (max-width:425px){
-    .header {
-    height: 100px;
-    width: 120%;
-    padding: 20px;
-    background-color: #ff9ae7;
-    text-transform: uppercase;
-    text-align: center;
-}
-.header h3 {
-    color: #fff;
-    margin-top: 0;
-    margin-left: 22px;
-}
-.form-container {
-    background-color: #fcfcfc;
-    width: 330px;
-    margin: 0 90px auto;
-    position: relative;
-    top: -62px;
-    padding: 20px;
-}
-input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea {
-    width: 100%;
-}
  }
-/*responsive laptop 375px*/
-@media (max-width: 395px){
-    .header h3 {
-    color: #fff;
-    margin-top: 0;
-    margin-left: 5px;
-}
-    .form-container {
-    background-color: #fcfcfc;
-    width: 330px;
-    margin: 0 50px auto;
-    position: relative;
-    top: -62px;
-    padding: 20px;
-}
-}
