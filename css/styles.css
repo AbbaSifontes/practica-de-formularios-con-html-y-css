@@ -114,34 +114,23 @@ color: #ed0000;
         color: #ff9ae7;
 }
 
- /* móviles */ 
-@media (max-width: 600px) { 
-.header h3{
-    margin-left: 45px;
-}
-    .form-container {
-        background-color: #fcfcfc;
-        width: 90%;
-        margin: 0 13px auto;
-        position: relative;
-        top: -62px;
-        padding: 20px;
+/* responsividade */
+
+/*celular 320px*/
+@media (max-width: 320px) {
+    .header{
+        width: 120%;
+    }
+    .form-container{
+        width: 120%;
     }
 }
-/* tablets */ 
-@media (min-width: 601px) and (max-width: 1024px) {
- 
-    .form-title {
-    margin-bottom: 15px;
-    text-align: center;
-}
-.form-body p {
-    margin-bottom: 20px;
-    text-align: center;
-}
-}
- 
-/* escritorio */
-@media (min-width: 1025px) { 
+/*celular 375px*/
+@media (max-width: 395px){}
+/* celular 576px */
+@media (max-width: 576px){}
+/* tablet 900px */
+@media (max-width: 900px) {}
 
- }
+/* small laptops a partir de 1100px */
+@media (max-width: 1024px){}
