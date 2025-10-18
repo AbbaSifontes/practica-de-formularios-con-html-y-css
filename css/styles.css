@@ -54,7 +54,7 @@ input[type=textarea], input[type=date]{
 }
 .btn-submit:hover{
     background-color: #f4cbd8;
-    color: black;
+    color: rgb(19, 19, 19);
     transition: 0.5s;
 }
 
