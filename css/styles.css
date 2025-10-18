@@ -44,10 +44,10 @@ input[type=textarea], input[type=date]{
 .btn-submit{
     background-color: #feb3cb;
     width: 120px;
-    height: 50px;
+    height: 25px;
     color: #ffffff;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor:pointer ;
     
     
@@ -63,6 +63,18 @@ input[type=textarea], input[type=date]{
 
 }
 /* DESKTOP GRANDE (1440px+) */
-@media (min-width: 1440px){
+@media (min-width: 1154px) and (max-width:2561px) {
+.box-input label{
+    margin: 0;
+    padding: 2px;
+    box-sizing: 0;
+}
+input[type="text"], 
+input[type="number"], 
+input[type="textarea"], 
+input[type="date"]
+ {
+    width: 95.1%;
+}
 
 }
