@@ -1,168 +1,68 @@
-/*reset*/
+/*First Mobile*/
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;    
+    box-sizing: border-box;
 }
 body{
-    background-color: #e0dee0e7;
+    font-family: Arial;
+    line-height: 1.6;
+    background-color: #f1efef;
+    padding: 5px auto;
 }
-
-
-h1,
-h2,
-h3,
-h4,
-h5{
-    color: #333;
-}
-p,label{
-    color: #444;
-}
-input{
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-textarea{
-    padding: 10px 5px;
-}
-input[type="text"],
-input[type="number"],
-input[type="date"],
-input[type="file"],
-textarea {
-    width: 400px;
-}
-/*page header*/
-
-.header{
- height: 100px;
- padding: 20px;
- background-color: #ff9ae7;
- text-transform: uppercase;
- text-align: center;
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 100%;
 }
 .header h3{
-    color: #fff;
-    margin-top: 0;
-}
-.form-container{
-    background-color: #fcfcfc;
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-    top: -62px;
-    padding: 20px ;
-}
-.form-header{
-    border-bottom: 1px solid #dfdfdf;
-    height: 45px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #feb3cb;
+    font-size: 1.2rem;
+    margin:0px;
 }
 .form-header p{
-    color: #ff9ae7;
-    border-bottom: 2px solid #ff9ae7 ;
-    width: 100px;
     text-align: center;
-    margin: 0 auto;
-    text-transform: uppercase;
-    height: 45px;
-    line-height: 45px;
-}
-.form-body{
-    padding: 30px;
+    border-bottom: 1px solid rgb(248, 180, 217);
 }
 .form-title{
-    margin-bottom: 15px;
+    text-align: center;
 }
-.form-body p{
-    margin-bottom: 20px;
-}
-.requiared-field{
-color: #ed0000;
-}
-.box-input{
-    margin-bottom: 35px;
+input[type=text],input[type=number],
+input[type=textarea], input[type=date]{
+    width: 95%;
 }
 .block{
-    display: block;
+    width: 95%;
+    height: 60px;
 }
-.optional-box{
-    display: inline-block;
-    margin: 0 30px 30px 0;
+.requiared-field{
+    color: red;
 }
-.optinal-list li{
-    list-style: none;
-    margin-bottom: 5px;
-}
-.box-input{
-    margin-bottom: 15px;
-}
+
 .btn-submit{
-    background-color: #ff9ae7;
-    color: #fff;
-    border: 2px solid transparent;
-    width: 150px;
+    background-color: #feb3cb;
+    width: 120px;
     height: 50px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.5s;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer ;
+    
+    
 }
 .btn-submit:hover{
-        background-color: #fff;
-        border-color: #ff9ae7;
-        color: #ff9ae7;
+    background-color: #f4cbd8;
+    color: black;
+    transition: 0.5s;
 }
 
-/* responsividade */
+/* TABLET 768px en adelante */
+@media (min-width: 768px){
 
-/*celular 320px*/
-@media screen and (max-width: 600px) {
-     .header{
-        width: 120%;
-    }
-    .form-container{
-        width: 120%;
-    }
-    input[type="text"], 
-    input[type="number"], 
-    input[type="date"], 
-    input[type="file"],
-     textarea {
-    width: 200px;
 }
-    .form-title {
-        margin-bottom: 15px;
-        font-size: 40px;
-    }
-.form-body p {
-    margin-bottom: 20px;
-    font-size: 13px;
-}
-.form-header p {
-    color: #ff9ae7;
-    border-bottom: 2px solid #ff9ae7;
-    width: 100px;
-    text-align: center;
-    margin: 0 180px auto;
-    text-transform: uppercase;
-    height: 45px;
-    line-height: 45px;
-}
-.header h3 {
-    color: #fff;
-    margin-top: 0;
-    margin-left: -99px;
-}
-} 
-   
+/* DESKTOP GRANDE (1440px+) */
+@media (min-width: 1440px){
 
-/*celular 375px*/
-@media (max-width: 395px){}
-/* celular 576px */
-@media (max-width: 576px){}
-/* tablet 900px */
-@media (max-width: 900px) {}
-
-/* small laptops a partir de 1100px */
-@media (max-width: 1024px){}
+}
